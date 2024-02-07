@@ -1,0 +1,71 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin-top: 15%;
+    background-color: rgba(128, 128, 128, 0.452);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-size: 400%;
+    background-position: left;
+    height: 100%;
+    animation: bg-animate 20s infinite alternate;
+
+}
+
+@keyframes bg-animate
+{
+    0%
+    {
+        background-position: left;
+    }
+    100%
+    {
+        background-position: right;
+    }
+}
+
+.content
+{
+    margin-top: 50%;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    padding: 5em 5em;
+    box-shadow: 5px 5px 10em rgba(68, 67, 67, 0.048);
+
+
+}
+.title
+{
+    color: #ea6f58;
+    width: 70%;
+    overflow-wrap: break-word;
+}
+
+.fun
+{
+    border: 0;
+    padding: 0.5em 1.5em;
+    font-size: 1.3rem;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 900ms;
+}
+
+.fun:hover,
+.fun:focus
+{
+    background-position: right;
+}
